@@ -1,0 +1,110 @@
+.bootstrap-icon {
+    top: 5%;
+    left: 30%;
+    animation-name: bootstrap;
+}
+
+.react-icon {
+    top: 30%;
+    left: 20%;
+    animation-name: react;
+}
+
+.firebase-icon {
+    bottom: 45%;
+    left: 2%;
+    animation-name: firebase;
+}
+
+.git-icon {
+    bottom: 15%;
+    left: 15%;
+    animation-name: git;
+}
+
+.python-icon {
+    top: 15%;
+    right: 30%;
+    animation-name: python;
+}
+
+.css-icon {
+    top: 10%;
+    right: 2%;
+    animation-name: css;
+}
+
+.html-icon {
+    bottom: 50%;
+    right: 10%;
+    animation-name: html;
+}
+
+.js-icon {
+    bottom: 10%;
+    right: 5%;
+    animation-name: js;
+}
+
+.skill-icons {
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bootstrap {
+    0% { top: 5%; left: 30%; transform: rotate(0deg);}
+    35% { top: 90%; left: 80%; transform: rotate(80deg);}
+    65% { top: 90%; left: 20%; transform: rotate(-120deg);}
+    100% { top: 5%; left: 40%; transform: rotate(0deg);}
+}
+
+@keyframes react {
+    0% { top: 30%; left: 20%; transform: rotate(0deg);}
+    35% { top: 5%; left: 80%; transform: rotate(-60deg);}
+    65% { top: 90%; left: 90%; transform: rotate(60deg);}
+    100% { top: 30%; left: 20%; transform: rotate(0deg);}
+}
+
+@keyframes firebase {
+    0% { bottom: 45%; left: 2%; transform: rotate(0deg);}
+    35% { bottom: 5%; left: 80%; transform: rotate(60deg);}
+    65% { bottom: 90%; left: 90%; transform: rotate(200deg);}
+    100% { bottom: 45%; left: 2%; transform: rotate(0deg);}
+}
+
+@keyframes git {
+    0% { bottom: 15%; left: 15%; transform: rotate(0deg);}
+    35% { bottom: 70%; left: 5%; transform: rotate(60deg);}
+    65% { bottom: 5%; left: 70%; transform: rotate(200deg);}
+    100% { bottom: 15%; left: 15%; transform: rotate(0deg);}
+}
+
+@keyframes python {
+    0% { top: 15%; right: 30%; transform: rotate(0deg);}
+    35% { top: 70%; right: 70%; transform: rotate(60deg);}
+    65% { top: 5%; right: 5%; transform: rotate(200deg);}
+    100% { top: 15%; right: 30%; transform: rotate(0deg);}
+}
+
+@keyframes css {
+    0% { top: 10%; right: 2%; transform: rotate(0deg);}
+    35% { top: 90%; right: 20%; transform: rotate(60deg);}
+    65% { top: 40%; right: 70%; transform: rotate(200deg);}
+    100% { top: 10%; right: 2%; transform: rotate(0deg);}
+}
+
+@keyframes html {
+    0% { bottom: 50%; right: 10%; transform: rotate(0deg);}
+    35% { bottom: 90%; right: 90%; transform: rotate(60deg);}
+    65% { bottom: 10%; right: 20%; transform: rotate(200deg);}
+    100% { bottom: 50%; right: 10%; transform: rotate(0deg);}
+}
+
+@keyframes js {
+    0% { bottom: 10%; right: 5%; transform: rotate(0deg);}
+    35% { bottom: 30%; right: 90%; transform: rotate(60deg);}
+    65% { bottom: 90%; right: 70%; transform: rotate(200deg);}
+    100% { bottom: 10%; right: 5%; transform: rotate(0deg);}
+}

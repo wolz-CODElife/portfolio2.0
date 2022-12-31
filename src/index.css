@@ -1,13 +1,31 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat&family=Permanent+Marker&display=swap');
+
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  max-width: 100vw;
+  font-family: 'League Spartan';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: 000000;
+  background-color: #F4F4F4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
+  background: #0F80E8;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  width: 12px;
+  height: 0px;
 }
