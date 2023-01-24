@@ -40,7 +40,7 @@ const LandingArticles = () => {
             <SwiperSlide className="bg-white rounded-[15px] md:rounded-[20px] overflow-hidden block md:flex justify-start items-center p-[20px] gap-[20px] md:gap-[30px]" key={article.title}>
                 <ImageLoader url={article.thumbnail} alt={article.title} classname="w-[180px] lg:w-[280px] max-h-[150px] object-contain rounded-[20px] hidden md:block" />
                 <div className='grow'>
-                    <a href={article.link} className='text-[18px] lg:text-[28px] font-[600] hover:underline'>{article.title}</a>
+                    <a href={article.link} target="_blank" rel="noopener noreferrer" className='text-[18px] lg:text-[28px] font-[600] hover:underline'>{article.title}</a>
                     <p className='lg:text-[24px] hidden sm:block md:block'>{article.desc}</p>
                     <p>{article.tags?.map(tag => (
                         <i className='text-[#30353E]' key={tag} >#{tag} </i>

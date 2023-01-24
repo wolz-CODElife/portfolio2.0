@@ -40,7 +40,7 @@ const LandingPresentation = () => {
             <SwiperSlide className="bg-white rounded-[15px] md:rounded-[20px] overflow-hidden block md:flex justify-start items-center p-[20px] gap-[20px] md:gap-[30px]" key={presentation.title}>
                 <ImageLoader url={presentation.thumbnail} alt={presentation.title} classname="w-[180px] lg:w-[280px] max-h-[150px] object-contain rounded-[20px] hidden md:block" />
                 <div className='grow'>
-                    <a href={presentation.link} className='text-[18px] lg:text-[28px] font-[600] hover:underline'>{presentation.title}</a>
+                    <a href={presentation.link} target="_blank" rel="noopener noreferrer" className='text-[18px] lg:text-[28px] font-[600] hover:underline'>{presentation.title}</a>
                     <p className='lg:text-[24px] hidden sm:block md:block'>{presentation.desc}</p>
                     <p>{presentation.tags?.map(tag => (
                         <i className='text-[#30353E]' key={tag} >#{tag} </i>
