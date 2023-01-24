@@ -14,7 +14,7 @@ const Apps = () => {
     <div className='flex flex-col w-full relative'>
         <Header />
         <div className='w-full px-[20px] md:px-[50px] py-[25px] mb-[50px] lg:mb-[0px]'>
-            <h1 className='text-[40px] font-[400] font-marker flex items-center'> <a href="/"><IconHome width='30' height='50' color='#0F80E8'/> </a> / My APPS</h1>
+            <h1 className='text-[40px] font-[400] font-marker flex items-center'> <a href="/"><IconHome width='30' height='50' color='#0F80E8'/> </a> / My Apps</h1>
             <hr className='w-[80%] mx-auto my-[30px] border-top-[1px] border-[#00000033]' />
             <div className="flex flex-wrap items-center justify-center md:gap-[45px]">
                 {filters.map(item => (

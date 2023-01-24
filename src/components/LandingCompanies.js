@@ -60,7 +60,7 @@ const LandingCompanies = () => {
         }
     ]
   return (
-    <div className='h-[calc(100vh-150px)] w-full flex flex-col justify-center items-center p-[20px] md:p-[50px] gap-[20px]'>
+    <div className='md:h-[calc(100vh-150px)] w-full flex flex-col justify-center items-center px-[20px] py-[50px] md:p-[50px] gap-[20px]'>
         <p>I’m proud to have collaborated with these companies:</p>
         <div className="flex flex-wrap gap-[20px] md:gap-[50px] items-center justify-center">
             {companies.map(company => (

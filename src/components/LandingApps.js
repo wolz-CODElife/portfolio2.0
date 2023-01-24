@@ -17,7 +17,8 @@ import { works } from '../data/works';
 
 const LandingApps = () => {
   return (
-    <div className='h-[calc(100vh-150px)] flex flex-col justify-center items-center'>
+    <div className='md:h-[calc(100vh-150px)] flex flex-col justify-center items-center px-[20px] py-[50px] md:p-[50px]'>
+      <h1 className='text-[30px] md:text-[40px] flex justify-center font-[400] font-marker'>My Apps</h1>
         <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -37,10 +38,10 @@ const LandingApps = () => {
             }}
             pagination={false}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="h-min max-h-[70%] w-full"
+            className="h-[250px] md:h-min md:max-h-[70%] w-full"
         >
           {works.map(work => (
-            <SwiperSlide className='w-full h-full' key={work.title}>
+            <SwiperSlide className='w-full h-full flex justify-center items-center' key={work.title}>
               <img src={work.thumbnail} alt={work.title} className='h-full max-h-[40vh] object-contain' />
             </SwiperSlide>
           ))}

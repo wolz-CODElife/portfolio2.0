@@ -6,24 +6,24 @@ const ArticlesGrid = ({filter}) => {
   return (
     <div className='w-full'>
         {articles.filter(article => filter !== 'All' ? article.tags.includes(filter) : true).map(article => (
-            <div className="bg-cover m-[20px] w-full h-[400px] rounded-[20px]" style={{ backgroundImage: `url(${article.thumbnail})` }} key={article.title}>
-                <div className="w-full h-full flex flex-col justify-end rounded-[20px] p-[30px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backgroundPosition: 'center center'}}>
+            <div className="bg-cover m-[20px] w-full min-h-[400px] rounded-[20px]" style={{ backgroundImage: `url(${article.thumbnail})` }} key={article.title}>
+                <div className="w-full min-h-[400px] flex flex-col justify-end rounded-[20px] p-[30px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backgroundPosition: 'center center'}}>
                     <div className="w-full flex-grow flex flex-col items-center justify-center">
-                        <h1 className='text-white font-league text-[28px] font-[600]'>{article.title}</h1>
+                        <h1 className='text-white font-league text-[20px] md:text-[28px] font-[600]'>{article.title}</h1>
                         <p className='flex items-center'>
                             {article.tools.map(tool => ( 
-                                <span className='mr-2 text-gray-400'>#{tool}</span> 
+                                <span key={tool} className='mr-2 text-gray-400'>#{tool}</span> 
                             ))}
                         </p>
                         <p className='text-white font-league text-[16px] font-[400]'>{article.desc}</p>
                     </div>
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center">
+                    <div className="flex flex-wrap items-center justify-between">
+                        <div className="flex flex-wrap items-center">
                             {article.tags?.map(tag => (
-                                <span className='rounded-full h-[22px] flex items-center px-[11px] mr-2 bg-white'>{tag}</span>
+                                <span key={tag} className='rounded-full h-[22px] flex items-center px-[11px] mr-2 my-1 bg-white'>{tag}</span>
                             ))}
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex items-center my-1">
                             <a href={article.link} target="_blank" rel="noopener noreferrer" className='hover:scale-125 duration-[0.4s] ease-in-out'><IconLink width='45' height='45' color='#0F80E8' /></a>
                             {article.source &&
                                 <a href={article.source} target="_blank" rel="noopener noreferrer" className='hover:scale-125 duration-[0.4s] ease-in-out'><IconGithub width='45' height='45' color='#0F80E8' /></a>

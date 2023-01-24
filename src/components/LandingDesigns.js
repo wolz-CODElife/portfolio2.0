@@ -15,7 +15,8 @@ import { IconArrowRight } from '../icons/icons';
 
 const LandingDesigns = () => {
   return (
-    <div className='h-[calc(100vh-150px)] flex flex-col justify-center items-center'>
+    <div className='md:h-[calc(100vh-150px)] flex flex-col justify-center items-center px-[20px] py-[50px] md:p-[50px]'>
+      <h1 className='text-[30px] md:text-[40px] flex justify-center font-[400] font-marker'>My Designs</h1>
         <Swiper
             slidesPerView={3}
             // spaceBetween={0}
@@ -27,7 +28,7 @@ const LandingDesigns = () => {
             pagination={false}
             loop={true}
             modules={[ FreeMode, Autoplay, Pagination]}
-            className="h-min max-h-[70%] w-full"
+            className="h-[250px] md:h-min md:max-h-[70%] w-full"
         >
             <SwiperSlide className='w-full h-full'>
             <img src="https://i.postimg.cc/nrBJGS3L/design1.png" alt="Design1" className='h-full object-contain' />

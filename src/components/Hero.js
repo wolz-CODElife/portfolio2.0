@@ -43,7 +43,7 @@ const Hero = () => {
 
         {/* Icons particle */}
         {icons.map(icon => (
-            <div className='animate-pulse'>
+            <div key={icon.name} className='animate-pulse'>
                 <img src={icon.img} key={icon.name} alt={icon.name} className={`absolute w-[40px] lg:w-[70px] h-[40px] lg:h-[70px] ${icon.name + '-icon'} skill-icons`} />
             </div>
         ))}
