@@ -12,7 +12,7 @@ const PresentationGrid = ({filter}) => {
                         <h1 className='text-white font-league text-[20px] md:text-[28px] font-[600]'>{presentation.title}</h1>
                         <p className='flex items-center'>
                             {presentation.tools.map(tool => ( 
-                                <span key={tool} className='mr-2 text-gray-400'>#{tool}</span> 
+                                <span key={tool} className='mr-2 text-gray-200'>#{tool}</span> 
                             ))}
                         </p>
                         <p className='text-white font-league text-[16px] font-[400]'>{presentation.desc}</p>
