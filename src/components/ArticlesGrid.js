@@ -6,7 +6,7 @@ const ArticlesGrid = ({filter}) => {
   return (
     <div className='w-full'>
         {articles.filter(article => filter !== 'All' ? article.tags.includes(filter) : true).map(article => (
-            <div className="bg-cover m-[20px] w-full min-h-[400px] rounded-[20px]" style={{ backgroundImage: `url(${article.thumbnail})` }} key={article.title}>
+            <div className="bg-cover my-[20px] md:m-[20px] w-full min-h-[400px] rounded-[20px]" style={{ backgroundImage: `url(${article.thumbnail})` }} key={article.title}>
                 <div className="w-full min-h-[400px] flex flex-col justify-end rounded-[20px] p-[30px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backgroundPosition: 'center center'}}>
                     <div className="w-full flex-grow flex flex-col items-center justify-center">
                         <h1 className='text-white font-league text-[20px] md:text-[28px] font-[600]'>{article.title}</h1>

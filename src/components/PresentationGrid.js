@@ -6,7 +6,7 @@ const PresentationGrid = ({filter}) => {
   return (
     <div className='w-full'>
         {presentations.filter(presentation => filter !== 'All' ? presentation.tools.includes(filter) : true).map(presentation => (
-            <div className="bg-cover m-[20px] w-full min-h-[400px] rounded-[20px]" style={{ backgroundImage: `url(${presentation.thumbnail})`, backgroundPosition: 'center center' }} key={presentation.title}>
+            <div className="bg-cover my-[20px] md:m-[20px] w-full min-h-[400px] rounded-[20px]" style={{ backgroundImage: `url(${presentation.thumbnail})`, backgroundPosition: 'center center' }} key={presentation.title}>
                 <div className="w-full min-h-[400px] flex flex-col justify-end rounded-[20px] p-[30px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backgroundPosition: 'center center'}}>
                     <div className="w-full flex-grow flex flex-col items-center justify-center">
                         <h1 className='text-white font-league text-[20px] md:text-[28px] font-[600]'>{presentation.title}</h1>

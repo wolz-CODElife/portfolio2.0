@@ -34,7 +34,7 @@ const Footer = () => {const socials = [
     },
 ]
   return (
-    <div className='min-h-[200px] md:min-h-[400px] w-full flex flex-col justify-center items-center p-[20px] md:p-[50px] gap-[20px]'>
+    <div className='min-h-[200px] md:min-h-[400px] w-full flex flex-col justify-center items-center p-[20px] md:p-[50px] gap-[20px] mb-[80px] md:mb-auto'>
         <hr className='border border-t-1 border-black w-full' />
         <div className="flex flex-wrap gap-[20px] md:gap-[50px] items-center justify-center">
             { socials.map((social) => (
