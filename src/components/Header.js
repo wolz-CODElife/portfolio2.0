@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import GithubCorner from 'react-github-corner'
 import { IconGithub, IconGmail, IconLinkedin, IconSocial, IconSocialOff, IconTwitch, IconTwitter, IconYoutube } from '../icons/icons'
 
 const socials = [
@@ -38,25 +39,36 @@ const Header = () => {
 
 
   return (
-    <div className="m-[30px] h-[100px] flex items-center justify-between shadow-top shadow-down rounded-[100px] py-[15px] px-[20px] relative">
-    {/* <div className="xs:mt-[40px] lg:mt-[90px] m-auto w-[90%] md:w-[80%] h-fit flex items-center justify-between shadow-top shadow-down rounded-[100px] py-[15px] px-[20px]"> */}
-        <a href="/" className='h-full'>
-            <img src="https://i.postimg.cc/R0qyjbwK/logo.png" alt="wolzcodelife" title='wolzcodelife' className='min-w-[50px] h-full object-contain' />
-        </a>
-        <div className="items-center flex-grow md:flex-grow-0 overflow-x-hidden hidden md:flex">
-            { socials.map((social) => (
-                <a href={social.link} key={social.title} target="_blank" rel="noopener noreferrer" title={social.title} className="ml-[30px] hover:scale-125 ease-in-out duration-[0.4s]">{social.img}</a>
-            ))}
-        </div>
-        <button className='flex md:hidden' onClick={() => setShow(!show)}>{ !show ? <IconSocial  /> : <IconSocialOff />}</button>
-        {show &&
-            <div className="absolute flex md:hidden flex-col items-center gap-[30px] z-50 top-[120px] right-[5px] bg-white py-[30px] px-[20px] shadow-top shadow-down rounded-[100px]">
+    <>
+        <GithubCorner
+            href="https://github.com/wolz-CODElife/portfolio2.0.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            bannerColor="rgb(0 162 255)"
+            octoColor="#fff"
+            size={80}
+            direction="right" 
+        />
+        <div className="m-[30px] h-[100px] flex items-center justify-between shadow-top shadow-down rounded-[100px] py-[15px] px-[20px] relative">
+        {/* <div className="xs:mt-[40px] lg:mt-[90px] m-auto w-[90%] md:w-[80%] h-fit flex items-center justify-between shadow-top shadow-down rounded-[100px] py-[15px] px-[20px]"> */}
+            <a href="/" className='h-full'>
+                <img src="https://i.postimg.cc/R0qyjbwK/logo.png" alt="wolzcodelife" title='wolzcodelife' className='min-w-[50px] h-full object-contain' />
+            </a>
+            <div className="items-center flex-grow md:flex-grow-0 overflow-x-hidden hidden md:flex">
                 { socials.map((social) => (
-                    <a href={social.link} key={social.title} target="_blank" rel="noopener noreferrer" title={social.title} className="hover:scale-125 ease-in-out duration-[0.4s]">{social.img}</a>
-                    ))}
+                    <a href={social.link} key={social.title} target="_blank" rel="noopener noreferrer" title={social.title} className="ml-[30px] hover:scale-125 ease-in-out duration-[0.4s]">{social.img}</a>
+                ))}
             </div>
-        }
-    </div>
+            <button className='flex md:hidden' onClick={() => setShow(!show)}>{ !show ? <IconSocial  /> : <IconSocialOff />}</button>
+            {show &&
+                <div className="absolute flex md:hidden flex-col items-center gap-[30px] z-40 top-[120px] right-[5px] bg-white py-[30px] px-[20px] shadow-top shadow-down rounded-[100px]">
+                    { socials.map((social) => (
+                        <a href={social.link} key={social.title} target="_blank" rel="noopener noreferrer" title={social.title} className="hover:scale-125 ease-in-out duration-[0.4s]">{social.img}</a>
+                        ))}
+                </div>
+            }
+        </div>
+    </>
   )
 }
 
