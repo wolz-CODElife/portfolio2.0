@@ -32,9 +32,18 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'fadeup': 'linear-gradient(180deg, #F4F4F4, rgba(244, 244, 244, 0.61), transparent)',
-        'fadebottom': 'linear-gradient(180deg, transparent, rgba(244, 244, 244, 0.61), #F4F4F4)',
+        'fadeup': 'linear-gradient(180deg, #a0b49c, rgba(160, 180, 156, 0.61), transparent)',
+        'fadebottom': 'linear-gradient(180deg, transparent, rgba(160, 180, 156, 0.61), #a0b49c)',
         'fullgradient': 'linear-gradient(180deg, rgba(145, 140, 140, 0) 0%, rgba(115, 111, 111, 0.37) 18.22%, rgba(86, 83, 83, 0.72) 42.71%, rgba(0, 0, 0, 0.72) 79.17%)' 
+      },
+      keyframes: {
+        slidedown: {
+          '0%': { opacity: 0, transform: 'translateY(-100%) translateX(-50%)', left: '50%', height: 0 } ,
+          '100%': { opacity: 1, transform: 'translateY(0) translateX(-50%)', left: '50%', height: '300px' },
+        }
+      },
+      animation: {
+          slidedown: 'slidedown 1s ease-in-out',
       },
       colors: {
         'theme': "#F4F4F4"

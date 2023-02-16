@@ -39,7 +39,8 @@ const icons = [
 const Hero = () => {
   return (
     <div className='w-full h-[calc(100vh-150px)] m-auto grid place-items-center relative'>
-        <img src="https://i.postimg.cc/yWqdSKFj/hero.png" alt="HeroImage" className='h-[calc(100vh-150px)] max-w-[90%] object-contain z-10' />
+        <img src="https://i.postimg.cc/T1WZtz46/hero.png" alt="HeroImage" className='h-[calc(100vh-150px)] max-w-[90%] z-10 object-contain' />
+        {/* <img src="https://i.postimg.cc/yWqdSKFj/hero.png" alt="HeroImage" className='h-[calc(100vh-150px)] max-w-[90%] object-contain z-10' /> */}
 
         {/* Icons particle */}
         {icons.map(icon => (

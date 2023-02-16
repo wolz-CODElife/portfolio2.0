@@ -46,15 +46,6 @@ export const works = [
         tags: ["Personal"],
     },
     {
-        title: "Mimeal",
-        desc: "MiMeal is a random meal generator that gives users suggestions of meals to eat.",
-        thumbnail: "https://i.postimg.cc/4xK1yQ4j/image.png",
-        link: "https://mimeal.herokuapp.com/",
-        source: "wolz-CODElife/mimeal",
-        tools: ["HTML & CSS", "PHP"],
-        tags: ["Hackathon"],
-    },
-    {
         title: "Twitter UI Clone",
         desc: "Twitter UI clone with google authentication implemented.",
         thumbnail: "https://i.postimg.cc/nrV6xKGv/image.png",

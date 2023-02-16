@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const ImageLoader = ({url, alt, classname}) => {
-  const [finalURL, setFinalURL] = useState('https://i.postimg.cc/yWqdSKFj/hero.png')
+  const [finalURL, setFinalURL] = useState('https://i.postimg.cc/SRfkDncG/wolzcodelife.png')
 
   useEffect(() => {
     checkImageUrl(url)
@@ -15,7 +15,7 @@ const ImageLoader = ({url, alt, classname}) => {
     // Set the onError event to handle invalid URLs
     image.onerror = function() {
       // The URL is invalid, so return the default image URL
-      setFinalURL('https://i.postimg.cc/yWqdSKFj/hero.png');
+      setFinalURL('https://i.postimg.cc/SRfkDncG/wolzcodelife.png');
     }
   
     // The URL is valid, so return the original URL

@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'aos/dist/aos.css';
+
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './routers/Home';
 import Apps from './routers/Apps';
 import Articles from './routers/Articles';
 import Presentations from './routers/Presentations';
+import Loader from './components/Loader';
 
 const router = createBrowserRouter([
   {
@@ -30,9 +33,30 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Application />
   </React.StrictMode>
 );
+
+function Application() {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+}, [])
+
+  return ( 
+    <>
+    {loading ? 
+    <Loader />
+    : 
+    <RouterProvider router={router} />
+    }
+    </>
+  );
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

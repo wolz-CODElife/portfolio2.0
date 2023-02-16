@@ -9,20 +9,20 @@ body, html {
   font-family: 'League Spartan';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: 000000;
-  background-color: #F4F4F4;
+  color: #141a17;
+  background-color: #a0b49c;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
   height: 0px;
-  background: #0F80E8;
+  background: #141a17;
 }
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: #a0b49c;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {

@@ -29,9 +29,9 @@ const Videos = () => {
         <PopupWidget 
             url="https://calendly.com/wolz-codelife"
             rootElement={document.getElementById("root")}
-            text="Schedule a meeting!"
-            textColor="#ffffff"
-            color="#00a2ff"
+            text="Hit me up!"
+            textColor="#a0b49c"
+            color="#141a17"
         />
     </div>
   )

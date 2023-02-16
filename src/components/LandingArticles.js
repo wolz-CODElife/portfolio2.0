@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { articles } from '../data/articles'
 import { IconArrowRight } from '../icons/icons'
@@ -12,16 +12,25 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import Tilt from 'react-parallax-tilt';
+import AOS from 'aos'
+
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
 import ImageLoader from './ImageLoader';
 
 const LandingArticles = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
-    <div className='md:h-[calc(100vh-150px)] relative w-full bg-[#0F80E8] flex flex-col justify-center px-[20px] py-[60px] md:p-[50px] gap-[20px]'>
+    <div className='md:h-[calc(100vh-150px)] relative w-full bg-[#141a17] flex flex-col justify-center px-[20px] py-[60px] md:p-[50px] gap-[20px]'>
     <div className="w-full h-6 absolute top-[-1px] left-0 z-20 bg-fadeup"></div>
-        <h1 className='text-[30px] md:text-[40px] flex justify-center font-[400] font-marker text-white'>My Articles</h1>
+        <h1 data-aos={ ['fade-left', 'flip-up', 'fade-right', 'slide-right', 'flip-down', 'slide-left', 'zoom-in-left', 'zoom-in-right'][Math.floor(Math.random() * 8)] } className='text-[30px] md:text-[40px] flex justify-center font-[400] font-marker text-[#a0b49c]'>My Articles</h1>
         <Swiper 
+            data-aos={ ['fade-left', 'flip-up', 'fade-right', 'slide-right', 'flip-down', 'slide-left', 'zoom-in-left', 'zoom-in-right'][Math.floor(Math.random() * 8)] } 
             direction={"vertical"} 
             slidesPerView={2}
             spaceBetween={10}
@@ -37,20 +46,22 @@ const LandingArticles = () => {
             className="h-[250px] md:h-[80%] w-full"
         >
         {articles?.map(article => (
-            <SwiperSlide className="bg-white rounded-[15px] md:rounded-[20px] overflow-hidden block md:flex justify-start items-center p-[20px] gap-[20px] md:gap-[30px]" key={article.title}>
-                <ImageLoader url={article.thumbnail} alt={article.title} classname="w-[180px] lg:w-[280px] max-h-[150px] object-contain rounded-[20px] hidden md:block" />
-                <div className='grow'>
-                    <a href={article.link} target="_blank" rel="noopener noreferrer" className='text-[18px] lg:text-[28px] font-[600] hover:underline'>{article.title}</a>
-                    <p className='lg:text-[24px] hidden sm:block md:block'>{article.desc}</p>
-                    <p>{article.tags?.map(tag => (
-                        <i className='text-[#30353E]' key={tag} >#{tag} </i>
-                    ))}</p>
-                </div>
+            <SwiperSlide key={article.title} className="my-4">
+                <Tilt scale={0.7} className="bg-[#a0b49c] rounded-[15px] md:rounded-[20px] overflow-hidden block md:flex justify-start items-center py-[18px] px-[20px] gap-[20px] md:gap-[30px]">
+                    <ImageLoader url={article.thumbnail} alt={article.title} classname="w-[180px] lg:w-[280px] max-h-[150px] object-cover rounded-[20px] hidden md:block" />
+                    <div className='grow'>
+                        <a href={article.link} target="_blank" rel="noopener noreferrer" className='text-[18px] text-[#141a17] lg:text-[28px] font-[600] hover:underline'>{article.title}</a>
+                        <p className='lg:text-[18px] hidden sm:block md:block'>{article.desc}</p>
+                        <p>{article.tags?.map(tag => (
+                            <i className='text-[#30353E] text-[15px]' key={tag} >#{tag} </i>
+                        ))}</p>
+                    </div>
+                </Tilt>
             </SwiperSlide>
         ))}
         </Swiper>
-        <div className="w-full flex justify-center items-center font-league">
-            <NavLink to={"/articles"} className='shadow-light shadow-down rounded-[50px] px-[30px] py-[10px] text-white flex justify-between items-center'> My Articles <span className='ml-8'></span> <IconArrowRight width='31' color='white' /></NavLink>
+        <div data-aos={ ['fade-left', 'flip-up', 'fade-right', 'slide-right', 'flip-down', 'slide-left', 'zoom-in-left', 'zoom-in-right'][Math.floor(Math.random() * 8)] } className="w-full flex justify-center items-center font-league">
+            <NavLink to={"/articles"} className='shadow-light shadow-down rounded-[50px] px-[30px] py-[10px] text-[#a0b49c] flex justify-between items-center'> My Articles <span className='ml-8'></span> <IconArrowRight width='31' color='#a0b49c' /></NavLink>
         </div>
         <div className="w-full h-6 absolute bottom-[-1px] left-0 z-20 bg-fadebottom"></div>
     </div>

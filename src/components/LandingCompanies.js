@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import AOS from 'aos'
 
 const LandingCompanies = () => {
     const companies = [
@@ -59,8 +61,13 @@ const LandingCompanies = () => {
             img: 'https://i.postimg.cc/wj5qLXH9/3t-Impex.png'
         }
     ]
+
+    useEffect(() => {
+      AOS.init();
+    }, [])
+
   return (
-    <div className='md:h-[calc(100vh-150px)] w-full flex flex-col justify-center items-center px-[20px] py-[50px] md:p-[50px] gap-[20px]'>
+    <div data-aos="flip-down" className='md:h-[calc(100vh-150px)] w-full flex flex-col justify-center items-center px-[20px] py-[50px] md:p-[50px] gap-[20px]'>
         <p>I’m proud to have collaborated with these companies:</p>
         <div className="flex flex-wrap gap-[20px] md:gap-[50px] items-center justify-center">
             {companies.map(company => (
