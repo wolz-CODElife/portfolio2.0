@@ -10,7 +10,7 @@ export const articles = [
     {
         title: "React 18 Upgrade Guide and New Features",
         desc: "Since updates frequently include modifications that change features completely or even eliminate certain features and add others...",
-        thumbnail: "https://refine.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1662726351561%2FFB_C4G1cg.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1662726351561/FB_C4G1cg.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
         link: "https://refine.hashnode.dev/react-18-upgrade-guide-and-new-features",
         tools: ["React", "MD"],
         tags: ["Featured on Hasdnode", "Contract"]

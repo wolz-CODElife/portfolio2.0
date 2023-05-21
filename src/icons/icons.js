@@ -91,11 +91,10 @@ export const IconGmail = ({width = "39", height = "35", color="black"}) => {
 
 export const IconDownload = ({width = "230", height = "173", color="black"}) => {
     return (
-        <svg width={width} height={height} viewBox="0 0 230 173" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M193.072 75.1469C194.545 71.015 195.371 66.4969 195.371 61.7857C195.371 41.3192 179.928 24.7143 160.894 24.7143C153.819 24.7143 147.21 27.0312 141.752 30.9701C131.803 12.4344 113.236 0 91.9392 0C60.1914 0 34.4772 27.6491 34.4772 61.7857C34.4772 62.8283 34.5131 63.871 34.549 64.9136C14.4373 72.521 0 93.142 0 117.393C0 148.093 23.1644 173 51.7158 173H183.878C209.269 173 229.848 150.873 229.848 123.571C229.848 99.6681 214.046 79.7036 193.072 75.1469ZM145.343 109.399L107.49 150.101C105.263 152.495 101.6 152.495 99.3733 150.101L61.5203 109.399C57.893 105.499 60.4788 98.8571 65.5785 98.8571H89.0661V55.6071C89.0661 52.2089 91.6519 49.4286 94.8123 49.4286H112.051C115.211 49.4286 117.797 52.2089 117.797 55.6071V98.8571H141.285C146.384 98.8571 148.97 105.499 145.343 109.399Z" fill={color}/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"></path><path d="M11 12.5a1.5 1.5 0 0 0-3 0v3a1.5 1.5 0 0 0 3 0m2-4.5l1.5 6l1.5-6"></path></g></svg>
     )
 }
+
 
 export const IconArrowRight = ({width = "62", height = "20", color = "black"}) => {
     return (

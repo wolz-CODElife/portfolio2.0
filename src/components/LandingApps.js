@@ -53,7 +53,7 @@ const LandingApps = () => {
           {works.map(work => (
             <SwiperSlide className='w-full h-full flex justify-center items-center' key={work.title}>
               <Tilt scale={0.7} className="h-full w-full">
-                <img src={work.thumbnail} alt={work.title} className='h-full max-h-[40vh] object-fill rounded-[20px]' />
+                <img src={work.thumbnail} alt={work.title} className='h-full max-h-[40vh] object-contain rounded-[20px]' />
               </Tilt>
             </SwiperSlide>
           ))}
