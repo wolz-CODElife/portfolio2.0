@@ -1,5 +1,13 @@
 export const presentations = [
     {
+        title: "International Work/Frrelance Opportunities - How to Reaach For Them",
+        desc: "Whlist waiting for a freelance gigs, you can focus on harnessing your skills, increasing your existing skills and networking",
+        thumbnail: "https://i.postimg.cc/kGxCzYtg/image.png",
+        link: "https://twitter.com/i/spaces/1nAJErzenzvxL",
+        tools: ["DevRel"],
+        tags: ["Speaking"]
+    },
+    {
         title: "Earn from what you write: A technical guide",
         desc: "Many tech persons develop and publish free content on various blogs, which is good, but they can harness the mutual benefits of writing.",
         thumbnail: "https://i.postimg.cc/0NV9CPXG/presentation.png",

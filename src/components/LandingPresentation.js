@@ -28,7 +28,7 @@ const LandingPresentation = () => {
   return (
     <div data-aos={ ['fade-left', 'flip-up', 'fade-right', 'slide-right', 'flip-down', 'slide-left', 'zoom-in-left', 'zoom-in-right'][Math.floor(Math.random() * 8)] } className='md:h-[calc(100vh-150px)] relative w-full bg-[#141a17] flex flex-col justify-center px-[20px] py-[60px] md:p-[50px] gap-[20px]'>
     <div className="w-full h-6 absolute top-[-1px] left-0 z-20 bg-fadeup"></div>
-        <h1 className='text-[30px] md:text-[40px] flex justify-center font-[400] font-marker text-[#a0b49c]'>My Presentations</h1>
+        <h1 className='text-[30px] md:text-[40px] flex justify-center font-[400] font-marker text-[#a0b49c]'>My Talks</h1>
         <Swiper 
             direction={"vertical"} 
             slidesPerView={2}
