@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+<p align="center">
+  <img width="587.5" alt="image" src="https://github.com/wolz-CODElife/portfolio2.0/assets/55518764/2bf26ddb-268b-4ba2-9554-18ca11766a31">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 📝 Table of Content
++ [How to reuse my portfolio]()
++ [🛠️Forking, Cloning and Improving your version]()
++ [📁 Project structure]()
++ [Routes/Pages]()
 
-## Available Scripts
+# How to reuse my portfolio
+I've made my portfolio open source, so feel free to open issues or reuse it. Even though it's a free world, there are still rules. Here are the rules 👍:
+1. Do not use my projects in your clone if you didn't make tangible contributions to the project.
+2. When making improvements, write proper commit messages.
+3. Respect other's contributions - discuss improvements before you overwrite. Or, simply create an issue and tag the author.
+4. Although tests were not written, make sure to push only working commits.
 
-In the project directory, you can run:
+# 📁 Project structure
+### Index
+Contains the route definitions(`"/", "/apps", "/articles" and "/presentations"`)
+```bash
+📁 src
+  └── index.js
+```
 
-### `npm start`
+### Routes or Pages
+Contains files for different pages of the portfolio(Apps, Articles, Home, Presentations and Videos) 
+```bash
+📁 src
+  └── routers
+      ├── Apps.js
+      ├── Articles.js
+      ├── Home.js
+      ├── Presentations.js
+      └── Videos.js
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Components
+Contains files of children components across the landing page and routes
++ Universal Components
+  ```bash
+  📁 src
+  └── components
+      ├── Footer.js
+      ├── Header.js
+      ├── ImageLoader.js
+      └── Loader.js
+  ```
++ Landing Page Components
+  ```bash
+  📁 src
+  └── components
+      ├── Hero.js
+      ├── Resume.js
+      ├── LandingApps.js
+      ├── LandingArticles.js
+      ├── LandingDesigns.js
+      ├── LandingPresentations.js
+      └── LandingCompanies.js
+  ```
++ Apps Route Components
+  ```bash
+  📁 src
+  └── components
+      └── AppsGrid.js
+  ```
++ Articles Route Components
+  ```bash
+  📁 src
+  └── components
+      └── ArticlesGrid.js
+  ```
++ Presentations Route Components
+  ```bash
+  📁 src
+  └── components
+      └── PresentationsGrid.js
+  ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Data
+Contains modules that export a list of the data we need in various routes
++ Footer/Contact Component Data
+  ```bash
+  📁 src
+  └── data
+      └── contacts.js
+  ```
++ Apps Route Data
+  ```bash
+  📁 src
+  └── data
+      └── works.js
+  ```
++ Articles Route Data
+  ```bash
+  📁 src
+  └── data
+      └── articles.js
+  ```
++ Presentations Route Data
+  ```bash
+  📁 src
+  └── data
+      └── presentations.js
+  ```
 
-### `npm test`
+### Icons
+Contains all the icons used throughout the portfolio
+```bash
+📁 src
+  └── icons
+      └── icons.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Styles
+The project uses Tailwind CSS for styling. However, the animation in the Hero section on the landing page uses custom CSS.
+```bash
+📁 src
+  └── components
+      └── styles
+          └── Hero.css
+```
 
-### `npm run build`
+# 🌐 Hosting
+I currently use Firebase for hosting. You can set up your own hosting on any hosting provider of your choice.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to update and improve this documentation as needed! 😊
