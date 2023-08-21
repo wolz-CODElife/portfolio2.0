@@ -1,6 +1,14 @@
 export const presentations = [
     {
-        title: "International Work/Frrelance Opportunities - How to Reaach For Them",
+        title: "Pathways into a Developer Relations Career in Web3",
+        desc: "Web3Ladies AMA session with Steph Opilla from Polygon Labs on Pathways into a Developer Relations Career in Web3",
+        thumbnail: "https://i.postimg.cc/SRHXK1jJ/IMG-6564.jpg",
+        link: "https://twitter.com/i/spaces/1BRKjZwyMoBKw",
+        tools: ["DevRel", "Web3"],
+        tags: ["Speaking"]
+    },
+    {
+        title: "International Work/Freelance Opportunities - How to Reaach For Them",
         desc: "Whlist waiting for a freelance gigs, you can focus on harnessing your skills, increasing your existing skills and networking",
         thumbnail: "https://i.postimg.cc/kGxCzYtg/image.png",
         link: "https://twitter.com/i/spaces/1nAJErzenzvxL",

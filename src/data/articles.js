@@ -28,15 +28,15 @@ export const articles = [
         desc: "A standard for yield bearing vaults.",
         thumbnail: "https://ethereum.org/static/28214bb68eb5445dcb063a72535bc90c/0f3ee/hero.png",
         link: "https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/",
-        tools: ["Polygon", "Ethereum", "MD"],
+        tools: ["Ethereum", "MD"],
         tags: ["Open Source", "Blockchain"]
     },
     {
         title: "Introduction to Polygon PoS | Polygon Technology",
         desc: "Build your next blockchain app on Polygon.",
         thumbnail: "https://wiki.polygon.technology/img/polygon-wiki.png",
-        link: "https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/",
-        tools: ["Ethereum", "MD"],
+        link: "https://wiki.polygon.technology/docs/pos/getting-started",
+        tools: ["Polygon", "Ethereum", "MD"],
         tags: ["Open Source", "Blockchain"]
     },
     {

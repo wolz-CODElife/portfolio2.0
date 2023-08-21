@@ -20,7 +20,7 @@ const Presentations = () => {
     <div className='flex flex-col w-full relative'>
         <Header />
         <div className='w-full px-[20px] md:px-[50px] py-[25px] mb-[50px] lg:mb-auto'>
-            <h1 data-aos="slide-right" className='text-[28px] md:text-[40px] text-[#141a17] font-[400] font-marker flex items-center'> <a href="/"><IconHome width='30' height='50' color='#141a17'/> </a> / My Talks</h1>
+            <h1 data-aos="slide-right" className='text-[28px] md:text-[40px] text-[#141a17] font-[400] font-marker flex items-center'> <a href="/"><IconHome width='30' height='50' color='#141a17'/> </a> / My Talks and Presentations</h1>
             <hr className='w-[80%] mx-auto my-[30px] border-top-[1px] border-[#00000033]' />
             <div data-aos="fade-up" className="flex flex-wrap items-center justify-center gap-[22px] md:gap-[45px]">
                 {filters.map(item => (
