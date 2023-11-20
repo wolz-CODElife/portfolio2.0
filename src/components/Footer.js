@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 
 import AOS from 'aos'
-import { IconGithub, IconGmail, IconLinkedin, IconTwitch, IconTwitter, IconYoutube } from '../icons/icons'
+import { IconGithub, IconGmail, IconHashnode, IconLinkedin, IconTwitter, IconYoutube } from '../icons/icons'
 
 const Footer = () => {const socials = [
     {
-        img: <IconTwitch width='100%' height='100%' color="#141a17" />,
-        link: "https://www.twitch.tv/wolz_codelife",
-        title: "Twitch"
+        img: <IconHashnode  color="#a0b49c"/>,
+        link: "https://blog.wolzcodelife.com",
+        title: "Blog"
     },
     {
         img: <IconLinkedin width='100%' height='100%' color="#141a17" />,

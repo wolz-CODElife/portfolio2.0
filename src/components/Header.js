@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import GithubCorner from 'react-github-corner'
-import { IconGithub, IconGmail, IconLinkedin, IconSocial, IconSocialOff, IconTwitch, IconTwitter, IconYoutube } from '../icons/icons'
+import { IconGithub, IconGmail, IconHashnode, IconLinkedin, IconSocial, IconSocialOff, IconTwitter, IconYoutube } from '../icons/icons'
 
 
 import Tilt from 'react-parallax-tilt';
@@ -8,9 +8,9 @@ import AOS from 'aos'
 
 const socials = [
     {
-        img: <IconTwitch  color="#a0b49c"/>,
-        link: "https://www.twitch.tv/wolz_codelife",
-        title: "Twitch"
+        img: <IconHashnode  color="#a0b49c"/>,
+        link: "https://blog.wolzcodelife.com",
+        title: "Blog"
     },
     {
         img: <IconLinkedin color="#a0b49c" />,

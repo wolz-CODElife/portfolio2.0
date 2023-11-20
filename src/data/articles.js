@@ -34,7 +34,7 @@ export const articles = [
     {
         title: "Introduction to Polygon PoS | Polygon Technology",
         desc: "Build your next blockchain app on Polygon.",
-        thumbnail: "https://wiki.polygon.technology/img/polygon-wiki.png",
+        thumbnail: "https://wiki.polygon.technology/img/polygon-logo.png",
         link: "https://wiki.polygon.technology/docs/pos/getting-started",
         tools: ["Polygon", "Ethereum", "MD"],
         tags: ["Open Source", "Blockchain"]
