@@ -5,7 +5,7 @@ import { IconGithub, IconGmail, IconHashnode, IconLinkedin, IconTwitter, IconYou
 
 const Footer = () => {const socials = [
     {
-        img: <IconHashnode width='100%' height='100%' color="#a0b49c"/>,
+        img: <IconHashnode width='100%' height='100%' color="#141a17"/>,
         link: "https://blog.wolzcodelife.com",
         title: "Blog"
     },
