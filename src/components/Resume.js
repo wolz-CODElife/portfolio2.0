@@ -13,7 +13,7 @@ const Resume = () => {
         <h1 className='my-[30px] font-[400] text-[25px] md:text-[36px] text-center'>TECHNICAL CONTENT DEVELOPER <br />&<br/> DEVELOPER ADVOCATE 🥑</h1>
 
         <div className="flex justify-center items-center font-league">
-            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1HjGDJ8MMCZG3PHq7E5otxzMQ2SkH9SDFxbuBDjCt5bs/edit?usp=sharing" className='shadow-top shadow-down rounded-[50px] px-[40px] py-[10px] bg-[#141a17] text-[#a0b49c]'> My Resume</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1YwxFCgVEczxFV4qrX0YkpSsw8viVNhoN/view?usp=sharing" className='shadow-top shadow-down rounded-[50px] px-[40px] py-[10px] bg-[#141a17] text-[#a0b49c]'> My Resume</a>
         </div>
     </div>
   )
