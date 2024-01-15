@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { IconDownload } from '../icons/icons'
 
 import AOS from 'aos'
 
