@@ -3,9 +3,9 @@
 </p>
 
 # 👨🏽‍🦯 Guidelines
-First off, let me tell you a secret(although, it may not be be a secret by the time you are reading this) 🤫 – my portfolio is now open source!
+First off, let me tell you a secret(although, it may not be a secret by the time you are reading this) 🤫 – my portfolio is now open source!
 
-👍 Yup, you read it right! You can dig into my code and even reuse it for your own projects. Feel free to create issues, fix bugs, suggest cool features, or simply marvel at my what I have brought to this world.
+👍 Yup, you read it right! You can dig into my code and even reuse it for your projects. Feel free to create issues, fix bugs, suggest cool features, or simply marvel at what I have brought to this world.
 
 🚧 🚨 Now, hold your horses, cowboys! 🤠
 
